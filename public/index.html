@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android App Generator</title>
+</head>
+<body>
+    <h1>Generate Your Android App</h1>
+    <form id="appForm" action="/generate-apk" method="post" enctype="multipart/form-data">
+        <label for="appName">App Name:</label>
+        <input type="text" id="appName" name="appName" required><br><br>
+
+        <label for="playlistURL">YouTube Playlist URL:</label>
+        <input type="text" id="playlistURL" name="playlistURL" required><br><br>
+
+        <label for="appIcon">App Icon:</label>
+        <input type="file" id="appIcon" name="appIcon" accept="image/*" required><br><br>
+
+        <button type="submit">Generate APK</button>
+    </form>
+</body>
+</html>
+ 
